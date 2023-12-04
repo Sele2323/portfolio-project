@@ -1,9 +1,17 @@
-.root {
+:root {
   --main-color: #272142;
-  --seconday-color: #6c63ff;
+  --secondary-color: #6c63ff;
   --primary-font-family: "Playfair Display", serif;
   --secondary-font-family: "Poppins", sans-serif;
 }
+
+.hero {
+  text-align: center;
+  margin: 100px 40px;
+  background-color: #f9f7fe;
+  padding: 160px 80px;
+}
+
 h2 {
   font-family: var(--secondary-font-family);
   font-size: 36px;
@@ -21,39 +29,66 @@ h3 {
   font-weight: bold;
   line-height: normal;
 }
+.featured-text {
+  text-align: center;
+  margin: 60px 40px;
+}
 
 .p-heading {
   font-family: var(--secondary-font-family);
   font-size: 24px;
   font-weight: normal;
   color: var(--main-color);
+  margin: 60px 20px;
 }
-.branding {
+.contact-btn {
   font-size: 18px;
   font-weight: normal;
-  background-color: var(--seconday-color);
+  background-color: var(--secondary-color);
+  margin: 60px 40px;
 
   color: white;
   border-radius: 4px;
   line-height: 27px;
   padding: 10px 20px;
 }
-.btn-branding-outline {
+.learn-more {
   font-size: 18px;
   border-radius: 4px;
   line-height: 27px;
   padding: 15px 30px;
-  color: var(--seconday-color);
-  border: 1px solid var(--seconday-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  text-align: center;
 }
 
-body {
-  text-align: center;
-  margin: 160px 40px;
-}
 p {
   font-family: var(--secondary-font-family);
   font-size: 16px;
   line-height: 30px;
   color: var(--main-color);
+}
+.project-description {
+  padding: 80px 30px;
+}
+@media (max-width: 900px) {
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .p-heading {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 44px;
+  }
+  .hero {
+    padding: 80px 0;
+  }
+  p {
+    font-size: 12px;
+  }
 }
