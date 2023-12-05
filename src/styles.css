@@ -29,6 +29,25 @@ h3 {
   font-weight: bold;
   line-height: normal;
 }
+.about-section {
+  padding: 160px 80px;
+}
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+.about-section h2 {
+  font-size: 18px;
+  font-family: var(--secondary-font-family);
+}
+.about-section-content {
+  margin: 30px;
+}
+.btn-branding {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
 .featured-text {
   text-align: center;
   margin: 60px 40px;
@@ -67,6 +86,7 @@ p {
   font-size: 16px;
   line-height: 30px;
   color: var(--main-color);
+  justify-content: left;
 }
 .project-description {
   padding: 80px 30px;
@@ -90,5 +110,12 @@ p {
   }
   p {
     font-size: 12px;
+  }
+  .about-section {
+    text-align: center;
+    padding: 0;
+  }
+  .about-section h1 {
+    font-size: 54px;
   }
 }
